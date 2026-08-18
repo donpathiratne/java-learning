@@ -38,5 +38,24 @@ String universityName = "IIT";
 double currentGPA = 3.75;
 
 System.out.println("Name: "+Name+"\nAge: "+Age+"\nUniversity: "+universityName+"\nGPA: "+currentGPA);
+/* 
+question 2
+ 
+Given:
+int totalSeconds = 100000;
+
+calculate and print the equivalent number of days, hours, minutes, and remaining seconds. Do not hardcode the expected values.
+*/
+int totalSeconds = 100000;
+int numberOfDays = totalSeconds/86400;
+int reminderOfDays = totalSeconds%86400;
+
+int numberOfHours = reminderOfDays/3600;
+int reminderOfHours = reminderOfDays%3600;
+
+int numberOfMinutes = reminderOfHours/60;
+int numberOfSeconds = reminderOfHours%60;
+
+System.out.println("Days: "+numberOfDays+" Hours: "+numberOfHours+" Minutes: "+numberOfMinutes+" Seconds: "+numberOfSeconds);
     }
 }
