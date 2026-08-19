@@ -66,7 +66,7 @@ int x = 7;
 int y = 2;
 
 System.out.println(x / y); # 3
-System.out.println((double) x / y); 3.0
+System.out.println((double) x / y); 3.5
 System.out.println(x % y); #1
 System.out.println("Result: " + x + y); #Result: 72
 System.out.println("Result: " + (x + y));# Result: 9
@@ -81,7 +81,14 @@ System.out.println(x % y);
 System.out.println("Result: " + x + y);
 System.out.println("Result: " + (x + y));
 
+/* question 4
 
+Challenge: A person has lived for age years. 
+Estimate how many heartbeats they have had, assuming 72 beats per minute. 
+Use long, account for leap years approximately by using 365.25 days/year, 
+and explain why converting between numeric types matters here.
+
+*/
     }
 }
 
