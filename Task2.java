@@ -57,5 +57,33 @@ int numberOfMinutes = reminderOfHours/60;
 int numberOfSeconds = reminderOfHours%60;
 
 System.out.println("Days: "+numberOfDays+" Hours: "+numberOfHours+" Minutes: "+numberOfMinutes+" Seconds: "+numberOfSeconds);
+
+
+/*question 3 
+Predict the output before running this code, then explain why:
+
+int x = 7;
+int y = 2;
+
+System.out.println(x / y); # 3
+System.out.println((double) x / y); 3.0
+System.out.println(x % y); #1
+System.out.println("Result: " + x + y); #Result: 72
+System.out.println("Result: " + (x + y));# Result: 9
+
+*/
+int x = 7;
+int y = 2;
+
+System.out.println(x / y); 
+System.out.println((double) x / y);
+System.out.println(x % y);
+System.out.println("Result: " + x + y);
+System.out.println("Result: " + (x + y));
+
+
     }
 }
+
+
+
