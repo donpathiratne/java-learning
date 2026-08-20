@@ -87,8 +87,14 @@ Challenge: A person has lived for age years.
 Estimate how many heartbeats they have had, assuming 72 beats per minute. 
 Use long, account for leap years approximately by using 365.25 days/year, 
 and explain why converting between numeric types matters here.
-
 */
+
+int personAge = 20;
+
+double totalBeats = 72*60*24*365.25*personAge;
+
+System.out.println("Total heart beats:");
+
     }
 }
 
