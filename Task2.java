@@ -93,7 +93,13 @@ int personAge = 20;
 
 double totalBeats = 72*60*24*365.25*personAge;
 
-System.out.println("Total heart beats:");
+System.out.println("Total heart beats:"+totalBeats);
+
+/*A shop gives a 12% discount, then applies 18% tax to the discounted price. 
+Write a program using double values to calculate the final price of an item costing 7999.99. 
+Print each stage clearly. */
+
+
 
     }
 }
