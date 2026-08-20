@@ -99,10 +99,13 @@ System.out.println("Total heart beats:"+totalBeats);
 Write a program using double values to calculate the final price of an item costing 7999.99. 
 Print each stage clearly. */
 
+double itemCost = 7999.99;
 
+double discountedPrice = itemCost-(itemCost*12)/100;
 
+double finalPrize = discountedPrice + (discountedPrice*18)/100;
+
+System.out.println("Final prize: "+finalPrize);
     }
 }
-
-
 
