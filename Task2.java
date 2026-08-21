@@ -108,4 +108,3 @@ double finalPrize = discountedPrice + (discountedPrice*18)/100;
 System.out.println("Final prize: "+finalPrize);
     }
 }
-
