@@ -34,6 +34,42 @@ public class Task3{
         System.out.println("Administrator");
     }
     
-    
+    if("admin".equals(role)){
+        System.out.println("Adminster");    // this is safer
+    }
+
+    // switch
+    int day = 3;
+
+    switch (day){
+        case 1:
+            System.out.println("Monday");
+            break;
+        case 2:
+            System.out.println("Tuesday");
+            break;
+        case 3:
+            System.out.println("Wednesday");
+            break;
+        default:
+            System.out.println("Otherday");
+        
+        }
+
+    char grade = 'A';
+
+    switch (grade){
+        case 'A':
+            System.out.println("Distinction");
+            break;
+        case 'B':
+            System.out.println("Good");
+            break;
+        case 'c':
+            System.out.println("Pass");
+            break;
+        default:
+            System.out.println("Fail");
+    }
     }
 }
