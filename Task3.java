@@ -18,5 +18,22 @@ public class Task3{
     else{
         System.out.println("Fail");
     }
+
+
+    int age = 21;
+    boolean hasID = true;
+
+    if(age >= 18 && hasID == true){
+        System.out.println("Entry allowed.");
+    }
+
+    // with Strings use .equals()
+    String role = "admin";
+
+    if(role.equals("admin")){
+        System.out.println("Administrator");
+    }
+    
+    
     }
 }
