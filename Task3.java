@@ -1,6 +1,6 @@
 public class Task3{
     public static void main(String[] args){
-
+    /*
     // conditional statements
     // if, else if, else
 
@@ -84,7 +84,20 @@ public class Task3{
         default -> "Invalid month";
     };
 
-System.out.println(season);
+    System.out.println(season);
+    // arrow form does not fall through.
+    */
 
+    // Loops
+
+    for(int i = 0; i<=5; i++){
+        System.out.println(i);
+    }
+
+    int attemps = 0;
+    while(attemps<5){
+        System.out.println("Attemp:"+(attemps+1));
+        attemps++;
+    }
     }
 }
