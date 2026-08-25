@@ -86,7 +86,7 @@ public class Task3{
 
     System.out.println(season);
     // arrow form does not fall through.
-    */
+    
 
     // Loops
 
@@ -108,5 +108,23 @@ public class Task3{
       System.out.println("Number: "+(number));
       number++;  
     }while(number<4);
+    */  
+
+    // break and continue
+    for(int i= 0;i<20;i++)
+        {   
+            if(i%2==1){
+                continue;
+            }
+
+            if(i==12)
+                {
+                    break;
+                }
+            System.out.println(i);
+
+        }
+
+
     }
 }
