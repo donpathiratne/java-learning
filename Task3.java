@@ -99,5 +99,14 @@ public class Task3{
         System.out.println("Attemp:"+(attemps+1));
         attemps++;
     }
+
+    // do-while
+
+    int number = 0;
+
+    do{
+      System.out.println("Number: "+(number));
+      number++;  
+    }while(number<4);
     }
 }
