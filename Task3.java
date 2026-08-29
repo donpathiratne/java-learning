@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Task3{
     public static void main(String[] args){
     /*
@@ -108,7 +110,7 @@ public class Task3{
       System.out.println("Number: "+(number));
       number++;  
     }while(number<4);
-    */  
+    
 
     // break and continue
     for(int i= 0;i<20;i++)
@@ -125,6 +127,29 @@ public class Task3{
 
         }
 
+        */
+        // user input
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.println("What is your name?");
+        String name = scanner.nextLine();
+        /* 
+        System.out.println("What is your age?");
+        int age = scanner.nextInt();
+
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+
+        System.out.println("Hello I am "+(name)+". I am "+(age)+" years old.");
+        scanner.close();
+        */
+
+        System.out.print("What is your age?");
+        int age = scanner.nextInt();
+        scanner.nextLine(); // consume leftover newline
+
+        System.out.println("Name: "+name);
+        System.out.println("Age: "+age);
+        
     }
 }
