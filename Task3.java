@@ -142,7 +142,7 @@ public class Task3{
 
         System.out.println("Hello I am "+(name)+". I am "+(age)+" years old.");
         scanner.close();
-        */
+        
 
         System.out.print("What is your age?");
         int age = scanner.nextInt();
@@ -150,6 +150,45 @@ public class Task3{
 
         System.out.println("Name: "+name);
         System.out.println("Age: "+age);
-        
+        */
+
+        // Practice 2
+        /* 
+        Write a grade evaluator. Read a mark from 0 to 100, reject invalid input, then print:
+            - A: 75–100
+            - B: 65–74
+            - C: 55–64
+            - S: 40–54
+            - F: 0–39
+        */
+
+        double mark;
+        mark = 100;
+
+        if(mark<=100 && mark>=75)
+            {
+                System.out.println("A");
+            }
+        else if(mark<75 && mark>=65)
+            {
+                System.out.println("B");
+            }
+        else if(mark<65 && mark>55)
+            {
+                System.out.println("A");
+            }
+        else if(mark<55 && mark>=40)
+            {
+                System.out.println("A");
+            }
+        else if(mark<40 && mark>=0)
+            {
+                System.out.println("F");
+            }
+        else{
+            System.out.println("Invalid input");
+        }
+
+
     }
 }
