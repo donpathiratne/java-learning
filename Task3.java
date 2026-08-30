@@ -160,14 +160,21 @@ public class Task3{
             - C: 55–64
             - S: 40–54
             - F: 0–39
+
+            Add a second result: “Eligible for scholarship” only if the grade is A and attendance is at least 80%.
         */
 
         double mark;
         mark = 100;
+        double attendance = 80;
 
         if(mark<=100 && mark>=75)
             {
                 System.out.println("A");
+                if(attendance> 80)
+                    {
+                        System.out.println("Eligible for scholarship");
+                    }
             }
         else if(mark<75 && mark>=65)
             {
@@ -188,7 +195,6 @@ public class Task3{
         else{
             System.out.println("Invalid input");
         }
-
-
+        
     }
 }
