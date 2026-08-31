@@ -203,28 +203,49 @@ public class Task3{
         It must support addition, subtraction, multiplication, division, and exit. 
         Reject division by zero and invalid menu options. 
         Keep showing the menu until the user exits. */
-
+        boolean decision = true;
         do{
             Scanner scanner1 = new Scanner(System.in);
 
+            System.out.print("Do you want to calculate or not?(Yes or No): ");
+            String yesNo = scanner1.nextLine();
+            if(yesNo.equalsIgnoreCase("yes")){
+
+            }
+            else if(yesNo.equalsIgnoreCase("no")){
+                break;
+            }
+            else{
+                continue;
+            }
+
+            double number1 = 0;
             // this is for getting a valid first number
+            while(true){
             System.out.print("Enter first number: ");
             String num1 = scanner1.nextLine();
             try{
-                double number1 = Double.parseDouble(num1);
+                number1 = Double.parseDouble(num1);
+                break;
             }catch(NumberFormatException e){
                 System.out.println("Invalid number");
                 continue;
             }
+        }
 
             // this is for getting a valid second number
+            double number2 = 0;
+            while(true){
             System.out.print("Enter second number: ");
             String num2 = scanner1.nextLine();
             try{
-                Double number2 = Double.parseDouble(num2);
+                number2 = Double.parseDouble(num2);
+                break;
             }catch(NumberFormatException e){
                 System.out.println("Invalid number");
-            }  
+                continue;
+            } 
+        }
             
             System.out.println("Select a option:");
             System.out.println("+ - addition");
@@ -236,32 +257,34 @@ public class Task3{
             String option = scanner1.nextLine();
             
             switch (option){
-                case "a":
-                    System.out.println("You have selected addition.");
+                case "+":
+                    System.out.print("You have selected addition.");
                     double total = ((number1) + (number2));
+                    System.out.println("Total is " + total);
                     break;
-                case "s":
-                    System.out.println("You have selected sustraction.");
+                case "-":
+                    System.out.print("You have selected sustraction.");
                     double different = number1 - number2;
+                    System.out.println("Different is "+different);
                     break;
-                case "d":
-                    System.out.println("You have selected division.");
+                case "/":
+                    System.out.print("You have selected division.");
+                    double division = number1 / number2;
+                    System.out.println("Division is "+ division);
                     break;
-                case "m":
-                    System.out.println("You have selected multiplicaton.");
+                case "*":
+                    System.out.print("You have selected multiplicaton.");
+                    double mul = number1 * number2;
+                    System.out.println("Multiplication is "+mul);
                     break;
                 case "e":
-                    System.out.println("You have selected exit.");
+                    System.out.print("You have selected exit.");
+                    decision = false;
                     break;
                 default:
-                    System.out.println("You have selected addition");
-
+                    System.out.println("Invalid...");
             }
 
-            
-            
-
-
-        }while(true);
+        }while(decision);
     }
 }
