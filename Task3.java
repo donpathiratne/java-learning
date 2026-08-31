@@ -128,11 +128,13 @@ public class Task3{
         }
 
         */
+       /*
         // user input
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("What is your name?");
         String name = scanner.nextLine();
+        */
         /* 
         System.out.println("What is your age?");
         int age = scanner.nextInt();
@@ -163,7 +165,7 @@ public class Task3{
 
             Add a second result: “Eligible for scholarship” only if the grade is A and attendance is at least 80%.
         */
-
+        /*
         double mark;
         mark = 100;
         double attendance = 80;
@@ -195,6 +197,71 @@ public class Task3{
         else{
             System.out.println("Invalid input");
         }
-        
+        */
+
+        /*Build a menu-driven calculator using a do-while loop. 
+        It must support addition, subtraction, multiplication, division, and exit. 
+        Reject division by zero and invalid menu options. 
+        Keep showing the menu until the user exits. */
+
+        do{
+            Scanner scanner1 = new Scanner(System.in);
+
+            // this is for getting a valid first number
+            System.out.print("Enter first number: ");
+            String num1 = scanner1.nextLine();
+            try{
+                double number1 = Double.parseDouble(num1);
+            }catch(NumberFormatException e){
+                System.out.println("Invalid number");
+                continue;
+            }
+
+            // this is for getting a valid second number
+            System.out.print("Enter second number: ");
+            String num2 = scanner1.nextLine();
+            try{
+                Double number2 = Double.parseDouble(num2);
+            }catch(NumberFormatException e){
+                System.out.println("Invalid number");
+            }  
+            
+            System.out.println("Select a option:");
+            System.out.println("+ - addition");
+            System.out.println("- - substraction" );
+            System.out.println("/ - division");
+            System.out.println("* - multiplication");
+            System.out.println("e - exit");
+            System.out.print("Your option : ");
+            String option = scanner1.nextLine();
+            
+            switch (option){
+                case "a":
+                    System.out.println("You have selected addition.");
+                    double total = ((number1) + (number2));
+                    break;
+                case "s":
+                    System.out.println("You have selected sustraction.");
+                    double different = number1 - number2;
+                    break;
+                case "d":
+                    System.out.println("You have selected division.");
+                    break;
+                case "m":
+                    System.out.println("You have selected multiplicaton.");
+                    break;
+                case "e":
+                    System.out.println("You have selected exit.");
+                    break;
+                default:
+                    System.out.println("You have selected addition");
+
+            }
+
+            
+            
+
+
+        }while(true);
     }
 }
