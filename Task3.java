@@ -338,7 +338,33 @@ public class Task3{
                 - Except divisible by 100 → not leap year
                 - Except divisible by 400 → leap year 
             */
+           int year = 0;
+           Scanner scanner = new Scanner(System.in);
+           while(true){
+           try{
+           System.out.print("Enter a year: ");
+           String testYear = scanner.nextLine();
+            year = Integer.parseInt(testYear);
+            if(testYear.length() == 4){
+                break;
+            }
+            else{
+                System.out.println("Invalid input");
+                continue;
+            }
+           }catch(NumberFormatException e){
+                System.out.println("Invalid input");
+                continue;
+                }
+            }
 
+            if((year % 4 == 0 && year % 100 != 0)|| year % 400 == 0){
+                System.out.println("It is a leap year.");
+            }
+            else{
+                System.out.println("It is not a leap year.");
+            }
+            
 
     }
 }
