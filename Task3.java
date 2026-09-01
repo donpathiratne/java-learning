@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Task3{
     public static void main(String[] args){
@@ -338,6 +338,8 @@ public class Task3{
                 - Except divisible by 100 → not leap year
                 - Except divisible by 400 → leap year 
             */
+
+            /* 
            int year = 0;
            Scanner scanner = new Scanner(System.in);
            while(true){
@@ -364,6 +366,7 @@ public class Task3{
             else{
                 System.out.println("It is not a leap year.");
             }
+            */
 
             // question 5
             /* 
@@ -373,9 +376,49 @@ public class Task3{
                 - For each guess, say “too high” or “too low.”
                 - Invalid guesses outside 1–100 do not consume an attempt.
                 - Detect duplicate guesses and do not consume an attempt.
-                - On success, report the number of valid attempts used; otherwise reveal the secret number.
+                - On success, report the number of valid attempts used; 
+                otherwise reveal the secret number.
                 */
 
-            
+            Scanner scanner = new Scanner(System.in);
+            int secretNumber = 73;
+            //int count = 0;
+            List<Integer> values = new ArrayList<>();
+            int userNumber = 0;
+            for(int i=1; i<8; i++){
+                while(true){
+                System.out.print("Enter your guess(0 - 100): ");
+                String num = scanner.nextLine();
+                try{
+                    userNumber = Integer.parseInt(num);
+                    if(0 <userNumber && userNumber <=100){
+                        if(values.contains(userNumber)){
+                                continue;
+                            }
+                        else{
+                            values.add(userNumber);
+                            break;
+                        }
+                    }
+                    else{
+                        continue;
+                    }
+                }
+                catch(NumberFormatException e){
+                    System.out.println("Pls enter an positive integer...");
+                }
+                }
+                if(userNumber == secretNumber){
+                    System.out.println("You guessed it "+i+" round.");
+                    break;
+                }
+                else if(userNumber> secretNumber){
+                    System.out.println("too high");
+                }
+                else{
+                    System.out.println("too low");
+                }
+            }
+       
     }
 }
