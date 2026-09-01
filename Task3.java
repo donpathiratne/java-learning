@@ -199,10 +199,12 @@ public class Task3{
         }
         */
 
+        
         /*Build a menu-driven calculator using a do-while loop. 
         It must support addition, subtraction, multiplication, division, and exit. 
         Reject division by zero and invalid menu options. 
         Keep showing the menu until the user exits. */
+        /* 
         boolean decision = true;
         do{
             Scanner scanner1 = new Scanner(System.in);
@@ -286,5 +288,50 @@ public class Task3{
             }
 
         }while(decision);
+
+        */
+
+        // question 3 
+
+        /*Read a positive integer n. 
+        Print all numbers from 1 to n that are divisible by 3 or 5, 
+        but not both. Also print their count and sum. 
+        Reject non-positive n. */
+        /* 
+        Scanner scanner = new Scanner(System.in);
+        int number = 0;
+        while(true){
+        System.out.print("Enter a positive integer number: ");
+        String num = scanner.nextLine();
+            try{
+                number = Integer.parseInt(num);
+                break;
+            }catch(NumberFormatException e){
+                System.out.println("Invalid");
+                continue;
+            }}
+            int count = 0;
+            int total = 0;
+            for(int i=1; i<=number; i++)
+                {
+                    if(i%3 == 0 && i%5 == 0)
+                        {
+                            continue;
+                        }
+                    else if(i%3 == 0 || i%5 == 0)
+                        {
+                            System.out.println("Number: "+ i);
+                            count++;
+                            total = total + number;
+                        }
+                    else{}
+                }
+            System.out.println("Count: "+count);
+            System.out.println("Total :"+total);
+            */
+
+            
+            
+
     }
 }
