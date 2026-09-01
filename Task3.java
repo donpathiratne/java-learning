@@ -330,8 +330,15 @@ public class Task3{
             System.out.println("Total :"+total);
             */
 
+            // question 4
             
-            
+            /*Read a year and determine whether it is a leap year. 
+            The full rule is:
+                - Divisible by 4 → leap year
+                - Except divisible by 100 → not leap year
+                - Except divisible by 400 → leap year 
+            */
+
 
     }
 }
