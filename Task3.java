@@ -364,7 +364,18 @@ public class Task3{
             else{
                 System.out.println("It is not a leap year.");
             }
-            
 
+            // question 5
+            /* 
+            Challenge: Create a number-guessing game.
+                - Use a fixed secret number first, such as 73.
+                - Allow at most 7 valid guesses.
+                - For each guess, say “too high” or “too low.”
+                - Invalid guesses outside 1–100 do not consume an attempt.
+                - Detect duplicate guesses and do not consume an attempt.
+                - On success, report the number of valid attempts used; otherwise reveal the secret number.
+                */
+
+            
     }
 }
